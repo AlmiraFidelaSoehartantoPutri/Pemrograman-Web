@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create a Portfolio Gallery using HTML and CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			/* wildcard styling */
+			* {
+				box-sizing: border-box;
+			}
+			/* padding for whole body */
+			body {
+				padding: 15px;
+			}
+			/* styling body */
+			.container {
+				max-width: 1200px;
+				margin: auto;
+			}
+			h1 {
+				color: #5673C8;
+			}
+			/* anchor tag decoration */
+			a {
+				text-decoration: none;
+				color: #5673C8;
+			}
+			a:hover {
+				color: lightblue;
+			}
+			/* paragraph tag decoration */
+			p {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 4;
+				overflow: hidden;
+			}
+			/* row and column decoration */
+			.row {
+				margin: 0px -18px;
+				padding: 8px;
+			}
+			.row > .column {
+				padding: 6px;
+			}
+			.column {
+				float: left;
+				width: 25%;
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			/* content decoration */
+			.content {
+				background-color: white;
+				padding: 10px;
+				border: 1px solid gray;
+			}
+			/* window size 850 width set */
+			@media screen and (max-width: 850px) {
+				.column {
+					width: 50%;
+				}
+			}
+			/* window size 400 width set */
+			@media screen and (max-width: 400px) {
+				.column {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- title and tag -->
+		<div class="container">
+			<h1>Square(2017)</h1>
+			<h3>Portal Teknik Informatika untuk Yerin</h3>
+			<hr>
+			<!-- Content of the body-->
+			<h2>Portofolio</h2>
+			<div class="row">
+				<div class="column">
+					<div class="content">
+						<img src="CoverbahasaC.png" alt="" style="width:100%">
+						<h3>
+							<a href="#">Tutorial C</a>
+						</h3>
+						<p>
+							Bahasa pemrograman C adalah salah satu bahasa pemrograman komputer
+							 yang paling berpengaruh dan penting dalam sejarah komputasi. 
+							Bahasa ini diciptakan pada awal tahun 1970 oleh Dennis Ritchie di 
+							Bell Labs (sekarang Nokia Bell Labs).
+						</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="content">
+						<img src="CoverbahasaC++.png" alt="" style="width:100%">
+						<h3>
+							<a href="#">Tutorial C++</a>
+						</h3>
+						<p>
+							Bahasa C++ adalah salah satu bahasa pemrograman yang populer dan 
+							sering digunakan dalam pengembangan perangkat lunak. Diciptakan 
+							sebagai perkembangan dari bahasa C, C++ menggabungkan paradigma 
+							pemrograman prosedural dan pemrograman berorientasi objek, 
+							sehingga memberikan fleksibilitas dan daya ekspresi yang tinggi.
+						</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="content">
+						<img src="CoverbahasaHTML.png" alt="" style="width:100%">
+						<h3>
+							<a href="#">Tutorial HTML</a>
+						</h3>
+						<p>
+							Bahasa HTML (Hypertext Markup Language) adalah bahasa yang 
+							digunakan untuk membuat dan mengatur struktur halaman web. HTML 
+							merupakan elemen dasar dari setiap situs web, dan ini adalah apa 
+							yang memungkinkan Anda melihat teks, gambar, video, tautan, dan 
+							elemen-elemen lainnya di browser web Anda.
+						</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="content">
+						<img src="CoverbahasaCSS.png" alt="" style="width:100%">
+						<h3>
+							<a href="#">Tutorial CSS</a>
+						</h3>
+						<p>Bahasa CSS (Cascading Style Sheets) adalah bahasa pemrograman yang
+						digunakan untuk mengendalikan tampilan dan presentasi elemen-elemen 
+						HTML (Hypertext Markup Language) pada sebuah halaman web.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>		
